@@ -16,40 +16,40 @@ const Footer = () => {
           <div className="text-gray-500 dark:text-gray-400 text-sm">
             © {new Date().getFullYear()} Bhavin Pathak. All rights reserved.
           </div>
-          <div className="flex gap-4 mt-4 md:mt-0">
+          <div className="flex gap-5 mt-4 md:mt-0">
             <a
               href="#"
-              className="text-gray-500 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
+              className="text-gray-500 dark:text-gray-400 hover:text-orange-600 dark:hover:text-purple-600 transition-colors"
             >
               <Facebook size={18} />
             </a>
             <a
               href="#"
-              className="text-gray-500 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
+              className="text-gray-500 dark:text-gray-400 hover:text-orange-600 dark:hover:text-purple-600 transition-colors"
             >
               <Instagram size={18} />
             </a>
             <a
               href="#"
-              className="text-gray-500 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
+              className="text-gray-500 dark:text-gray-400 hover:text-orange-600 dark:hover:text-purple-600 transition-colors"
             >
               <Twitter size={18} />
             </a>
             <a
               href="#"
-              className="text-gray-500 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
+              className="text-gray-500 dark:text-gray-400 hover:text-orange-600 dark:hover:text-purple-600 transition-colors"
             >
               <Linkedin size={18} />
             </a>
             <a
               href="#"
-              className="text-gray-500 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
+              className="text-gray-500 dark:text-gray-400 hover:text-orange-600 dark:hover:text-purple-600 transition-colors"
             >
               <Code size={18} />
             </a>
             <a
               href="#"
-              className="text-gray-500 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
+              className="text-gray-500 dark:text-gray-400 hover:text-orange-600 dark:hover:text-purple-600 transition-colors"
             >
               <Github size={18} />
             </a>
