@@ -59,12 +59,11 @@ export default function PortfolioV2() {
   }, [])
 
   const navItems = [
-      { id: "home", label: "Home", icon: <Code size={18} /> },
-    { id: "about", label: "About Me", icon: <User size={18} /> },
-    { id: "projects", label: "Projects", icon: <Briefcase size={18} /> },
-    { id: "education", label: "Educations", icon: <GraduationCap size={18} /> },
-    { id: "experience", label: "Experience", icon: <GraduationCap size={18} /> },
-    { id: "contact", label: "Contact", icon: <Mail size={18} /> },
+    { id: "home", label: "Inicio", icon: <Code size={18} /> },
+    { id: "about", label: "Sobre mí", icon: <User size={18} /> },
+    { id: "projects", label: "Proyectos", icon: <Briefcase size={18} /> },
+    { id: "education", label: "Educación", icon: <GraduationCap size={18} /> },
+    { id: "contact", label: "Contacto", icon: <Mail size={18} /> },
   ]
 
   const skills = [
