@@ -162,7 +162,7 @@ export default function PortfolioV2() {
 
       {/* Main Content */}
       <main className="pt-16">
-        {/* Hero Section */}
+        {/* Home Section */}
         <section
           id="home"
           className="min-h-screen flex items-center justify-center py-20"
@@ -174,49 +174,35 @@ export default function PortfolioV2() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <Badge className="mb-4 bg-teal-500/10 text-teal-500 dark:bg-teal-400/10 dark:text-teal-400 hover:bg-teal-500/20 dark:hover:bg-teal-400/20">
-                  Desarrollador Web Junior
-                </Badge>
                 <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                  Hola, soy{" "}
-                  <span className="bg-gradient-to-r from-teal-500 to-indigo-500 bg-clip-text text-transparent">
-                    TuNombre
+                  Hey there I’m{" "}
+                  <span className="bg-gradient-to-r from-purple-500 to-orange-500 bg-clip-text text-transparent">
+                    Bhavin Pathak
                   </span>
                 </h1>
-                <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
-                  Desarrollador frontend apasionado por crear experiencias web
-                  atractivas y funcionales.
+                <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-h-2xl">
+                  Full-Stack Developer who blends technology with great user
+                  experience. From eye-catching UI to rock-solid backend, I make
+                  sure every app is not just functional but enjoyable to use!
                 </p>
-                <div className="flex flex-wrap justify-center gap-4">
-                  <Button className="bg-gradient-to-r from-teal-500 to-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-white border-0">
-                    Ver proyectos <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="border-gray-300 dark:border-gray-700"
-                  >
-                    Descargar CV
-                  </Button>
-                </div>
-
                 <div className="mt-12 flex gap-4 justify-center">
                   <a
                     href="#"
                     className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
                   >
-                    <Github size={20} />
+                    <Github size={25} />
                   </a>
                   <a
                     href="#"
                     className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
                   >
-                    <Linkedin size={20} />
+                    <Linkedin size={25} />
                   </a>
                   <a
                     href="#"
                     className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
                   >
-                    <Mail size={20} />
+                    <Mail size={25} />
                   </a>
                 </div>
               </motion.div>
@@ -228,54 +214,55 @@ export default function PortfolioV2() {
         <section id="about" className="py-20 bg-gray-100 dark:bg-gray-900/50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <Badge className="mb-4 bg-teal-500/10 text-teal-500 dark:bg-teal-400/10 dark:text-teal-400">
-                Sobre mí
-              </Badge>
-              <h2 className="text-3xl font-bold mb-4">Conóceme mejor</h2>
+              <h2 className="text-3xl font-bold mb-4">Who I Am & What I Do</h2>
               <p className="text-gray-600 dark:text-gray-300">
-                Soy un desarrollador web junior con pasión por aprender nuevas
-                tecnologías y crear soluciones innovadoras.
+                From Passion to Profession – My Developer Journey.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Mi historia</h3>
+                <h3 className="text-2xl font-semibold mb-4">
+                  Behind the Code My Story 🤌
+                </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
-                  Soy un desarrollador web junior con pasión por aprender nuevas
-                  tecnologías y crear soluciones innovadoras. Mi objetivo es
-                  combinar diseño y funcionalidad para crear experiencias de
-                  usuario excepcionales.
+                  I am Bhavin Pathak, a <b>Full-Stack Software Developer</b>{" "}
+                  with a passion for learning new technologies and building
+                  innovative digital solutions. My goal is to combine design,
+                  performance, and functionality to create seamless user
+                  experiences. Currently, I specialize in frontend development
+                  with React and Flutter, while also having strong experience in
+                  Node.js, Native iOS development, and databases.
                 </p>
-                <p className="text-gray-600 dark:text-gray-300 mb-6">
-                  Actualmente estoy enfocado en el desarrollo frontend con
-                  React, pero también tengo experiencia con Node.js y bases de
-                  datos. Me encanta resolver problemas y colaborar en equipos
-                  multidisciplinarios.
+                <p>
+                  I enjoy solving complex problems, optimizing performance, and
+                  collaborating with multidisciplinary teams to turn ideas into
+                  reality.
                 </p>
-
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
-                    <div className="text-3xl font-bold text-teal-500 dark:text-teal-400 mb-1">
+                    <div className="text-3xl font-bold text-purple-500 dark:text-orange-400 mb-1">
                       2+
                     </div>
                     <div className="text-gray-600 dark:text-gray-300">
-                      Años de experiencia
+                      Years of experience
                     </div>
                   </div>
                   <div className="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
-                    <div className="text-3xl font-bold text-indigo-500 dark:text-indigo-400 mb-1">
-                      10+
+                    <div className="text-3xl font-bold text-purple-500 dark:text-orange-400 mb-1">
+                      5+
                     </div>
                     <div className="text-gray-600 dark:text-gray-300">
-                      Proyectos completados
+                      Completed projects
                     </div>
                   </div>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-1xl font-semibold mb-6">Mis habilidades</h3>
+                <h3 className="text-1xl font-semibold mb-6">
+                  Crafting with These Skills 🧑‍💻
+                </h3>
                 <Tabs defaultValue={skills[0]?.category} className="w-full">
                   <TabsList className="grid grid-cols-3 mb-6">
                     {skills.map((skill) => (
@@ -314,13 +301,9 @@ export default function PortfolioV2() {
         <section id="projects" className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <Badge className="mb-4 bg-teal-500/10 text-teal-500 dark:bg-teal-400/10 dark:text-teal-400">
-                Proyectos
-              </Badge>
-              <h2 className="text-3xl font-bold mb-4">Mi trabajo reciente</h2>
+              <h2 className="text-3xl font-bold mb-4">My recent work</h2>
               <p className="text-gray-600 dark:text-gray-300">
-                Aquí hay una selección de proyectos en los que he trabajado
-                recientemente.
+                Projects that define my journey as a developer.
               </p>
             </div>
 
@@ -384,10 +367,9 @@ export default function PortfolioV2() {
         >
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <Badge className="mb-4 bg-teal-500/10 text-teal-500 dark:bg-teal-400/10 dark:text-teal-400">
-                Work
-              </Badge>
-              <h2 className="text-3xl font-bold mb-4">My Work Background</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                My Education Background
+              </h2>
             </div>
 
             <div className="max-w-4xl mx-auto">
@@ -430,18 +412,11 @@ export default function PortfolioV2() {
             </div>
           </div>
         </section>
-
-        {/* Work Section */}
         {/* Work Section */}
         <section id="work" className="py-20 bg-gray-100 dark:bg-gray-900/50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <Badge className="mb-4 bg-teal-500/10 text-teal-500 dark:bg-teal-400/10 dark:text-teal-400">
-                Education
-              </Badge>
-              <h2 className="text-3xl font-bold mb-4">
-                My Educational Background
-              </h2>
+              <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
             </div>
 
             <div className="max-w-4xl mx-auto">
@@ -489,9 +464,6 @@ export default function PortfolioV2() {
         <section id="contact" className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <Badge className="mb-4 bg-teal-500/10 text-teal-500 dark:bg-teal-400/10 dark:text-teal-400">
-                Contact
-              </Badge>
               <h2 className="text-3xl font-bold mb-4">Shall we talk ?</h2>
               <p className="text-gray-600 dark:text-gray-300">
                 Are you interested in working together, or do you have any
