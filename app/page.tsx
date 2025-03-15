@@ -1,7 +1,8 @@
 "use client";
 
-import PortfolioV2 from "../pages/portfolio";
+import MainPointViews from "@/pages/main";
 
-export default function SyntheticV0PageForDeployment() {
-  return <PortfolioV2 />;
+
+export default function EntryPointDeployment() {
+  return <MainPointViews />;
 }
