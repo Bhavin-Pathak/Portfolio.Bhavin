@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Code, Facebook, Github, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
 
 const Home = () => {
   return (
@@ -25,26 +25,44 @@ const Home = () => {
               experience. From eye-catching UI to rock-solid backend, I make
               sure every app is not just functional but enjoyable to use!
             </p>
-            <div className="mt-12 flex gap-4 justify-center">
-              <a
-                href="#"
-                className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
-              >
-                <Github size={25} />
-              </a>
-              <a
-                href="#"
-                className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
-              >
-                <Linkedin size={25} />
-              </a>
-              <a
-                href="#"
-                className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
-              >
-                <Mail size={25} />
-              </a>
-            </div>
+            <div className="mt-12 flex gap-5 justify-center">
+            <a
+              href="#"
+              className="text-gray-500 dark:text-gray-400 hover:text-orange-600 dark:hover:text-purple-600 transition-colors"
+            >
+              <Facebook size={30} />
+            </a>
+            <a
+              href="#"
+             className="text-gray-500 dark:text-gray-400 hover:text-orange-600 dark:hover:text-purple-600 transition-colors"
+            >
+              <Instagram size={30} />
+            </a>
+            <a
+              href="#"
+              className="text-gray-500 dark:text-gray-400 hover:text-orange-600 dark:hover:text-purple-600 transition-colors"
+            >
+              <Twitter size={30} />
+            </a>
+            <a
+              href="#"
+              className="text-gray-500 dark:text-gray-400 hover:text-orange-600 dark:hover:text-purple-600 transition-colors"
+            >
+              <Linkedin size={30} />
+            </a>
+            <a
+              href="#"
+              className="text-gray-500 dark:text-gray-400 hover:text-orange-600 dark:hover:text-purple-600 transition-colors"
+            >
+              <Code size={30} />
+            </a>
+            <a
+              href="#"
+             className="text-gray-500 dark:text-gray-400 hover:text-orange-600 dark:hover:text-purple-600 transition-colors"
+            >
+              <Github size={30} />
+            </a>
+          </div>
           </motion.div>
         </div>
       </div>
