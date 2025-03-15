@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { education } from "@/lib/constants";
 import { motion } from "framer-motion";
 
-const About = () => {
+const Educations = () => {
   return (
     <section id="education" className="py-20 bg-gray-100 dark:bg-gray-900/50">
       <div className="container mx-auto px-4">
@@ -51,4 +51,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Educations;
