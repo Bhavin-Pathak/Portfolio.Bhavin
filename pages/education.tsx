@@ -22,7 +22,7 @@ const Educations = () => {
             >
               <div className="hidden sm:block pt-1">
                 <div className="w-12 h-12 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex items-center justify-center shadow-sm">
-                  <div className="w-3 h-3 rounded-full bg-gradient-to-r from-teal-500 to-indigo-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-gradient-to-r from-purple-600 to-orange-600"></div>
                 </div>
                 {index !== education.length - 1 && (
                   <div className="w-0.5 h-full bg-gray-200 dark:bg-gray-700 ml-6 mt-2"></div>

@@ -76,7 +76,7 @@ const About = () => {
                         key={item}
                         className="p-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex items-center gap-2"
                       >
-                        <div className="w-2 h-2 rounded-full bg-gradient-to-r from-teal-500 to-indigo-500"></div>
+                        <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-600 to-orange-600"></div>
                         <span>{item}</span>
                       </div>
                     ))}

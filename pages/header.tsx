@@ -10,6 +10,7 @@ import {
   Moon,
   Sun,
   User,
+  Workflow,
   X,
 } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -27,7 +28,7 @@ const Header = () => {
       label: "Education",
       icon: <GraduationCap size={18} />,
     },
-    { id: "work", label: "Work", icon: <GraduationCap size={18} /> },
+    { id: "work", label: "Work", icon: <Workflow size={18} /> },
     { id: "contact", label: "Contact", icon: <Mail size={18} /> },
   ];
   // Cambiar tema claro/oscuro
@@ -65,15 +66,6 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-[#0f172a]/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
       <div className="container mx-auto px-4 flex justify-between items-center h-16">
-        <div className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-purple-500 flex items-center justify-center text-white font-bold">
-            BP
-          </div>
-          <span className="font-bold text-xl hidden sm:block">
-            Bhavin Pathak
-          </span>
-        </div>
-
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-1">
           {navItems.map((item) => (
@@ -82,10 +74,11 @@ const Header = () => {
               href={`#${item.id}`}
               className={`px-4 py-2 rounded-md transition-colors ${
                 activeSection === item.id
-                  ? "bg-gray-100 dark:bg-gray-800 text-teal-500 dark:text-teal-400"
-                  : "hover:bg-gray-100 dark:hover:bg-gray-800/50"
+                  ? "bg-white-100 dark:bg-white-800 text-purple-500 dark:text-orange-400"
+                  : "hover:bg-white-100 dark:hover:bg-white-800/50"
               }`}
             >
+              {" "}
               {item.label}
             </a>
           ))}
@@ -126,6 +119,7 @@ const Header = () => {
                     className="flex items-center justify-between p-4 rounded-lg border border-gray-200 dark:border-gray-800"
                     onClick={() => setMobileMenuOpen(false)}
                   >
+                    {" "}
                     <div className="flex items-center gap-3">
                       <div className="p-2 rounded-md bg-gray-100 dark:bg-gray-800">
                         {item.icon}
