@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { projects } from "@/lib/constants";
 
-const Contact = () => {
+const Projects = () => {
   return (
     <section id="projects" className="py-20">
       <div className="container mx-auto px-4">
@@ -70,4 +70,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Projects;
