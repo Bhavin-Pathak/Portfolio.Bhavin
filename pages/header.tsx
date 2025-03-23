@@ -64,75 +64,37 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-[#0f172a]/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
-      <div className="container mx-auto px-4 flex justify-between items-center h-16">
+    <header
+      className={`fixed top-0 left-20 right-20 z-50 bg-white/80 dark:bg-[#0f172a]/80 backdrop-blur-md border-0 sm:border-0 md:border transition-all duration-300 ease-in-out ${darkMode ? "border-orange-500" : "border-purple-500"
+        } max-w-xl mx-auto mt-3 rounded-full md:block hidden`}
+    >
+      <div className="container mx-auto px-2 flex justify-between items-center h-16">
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-1">
           {navItems.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
-              className={`px-4 py-2 rounded-md transition-colors ${
-                activeSection === item.id
-                  ? "bg-white-100 dark:bg-white-800 text-purple-500 dark:text-orange-400"
-                  : "hover:bg-white-100 dark:hover:bg-white-800/50"
-              }`}
+              className={`px-4 py-2 rounded-md transition-colors ${activeSection === item.id
+                ? "bg-white-100 dark:bg-white-800 text-purple-500 dark:text-orange-400"
+                : "hover:bg-white-100 dark:hover:bg-white-800/50"
+                }`}
             >
-              {" "}
               {item.label}
             </a>
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center justify-center gap-2">
           <Button
             variant="ghost"
             size="icon"
             onClick={() => setDarkMode(!darkMode)}
-            className="rounded-full"
+            className="rounded-full hidden sm:flex items-center justify-center"
           >
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </Button>
-
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden rounded-full"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </Button>
         </div>
-        <AnimatePresence>
-          {mobileMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              className="fixed inset-0 z-40 bg-white dark:bg-[#0f172a] pt-16"
-            >
-              <nav className="container mx-auto px-4 py-8 flex flex-col gap-4">
-                {navItems.map((item) => (
-                  <a
-                    key={item.id}
-                    href={`#${item.id}`}
-                    className="flex items-center justify-between p-4 rounded-lg border border-gray-200 dark:border-gray-800"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {" "}
-                    <div className="flex items-center gap-3">
-                      <div className="p-2 rounded-md bg-gray-100 dark:bg-gray-800">
-                        {item.icon}
-                      </div>
-                      <span className="font-medium">{item.label}</span>
-                    </div>
-                    <ChevronRight size={20} className="text-gray-400" />
-                  </a>
-                ))}
-              </nav>
-            </motion.div>
-          )}
-        </AnimatePresence>
       </div>
     </header>
   );
