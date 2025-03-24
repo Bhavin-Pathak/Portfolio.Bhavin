@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Work = () => {
   return (
-    <section id="work" className="py-20 bg-gray-100 dark:bg-gray-900/50">
+    <section id="work" className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900/50 py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Work Experience</h2>

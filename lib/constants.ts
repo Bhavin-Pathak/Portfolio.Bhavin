@@ -59,6 +59,30 @@ export const projects = [
         image: "/NodeJS.jpg?height=200&width=350",
         github: "https://github.com/Bhavin-Pathak/Portfolio.Bhavin.git",
     },
+    {
+        title: "Portfolio.Bhavin",
+        description:
+            "This is my personal portfolio website, designed to showcase my skills, projects, and professional journey. The website is built using React, Next.js, and Tailwind CSS.",
+        technologies: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel", "GitHub Pages"],
+        image: "/NodeJS.jpg?height=200&width=350",
+        github: "https://github.com/Bhavin-Pathak/Portfolio.Bhavin.git",
+    },
+    {
+        title: "Portfolio.Bhavin",
+        description:
+            "This is my personal portfolio website, designed to showcase my skills, projects, and professional journey. The website is built using React, Next.js, and Tailwind CSS.",
+        technologies: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel", "GitHub Pages"],
+        image: "/NodeJS.jpg?height=200&width=350",
+        github: "https://github.com/Bhavin-Pathak/Portfolio.Bhavin.git",
+    },
+    {
+        title: "Portfolio.Bhavin",
+        description:
+            "This is my personal portfolio website, designed to showcase my skills, projects, and professional journey. The website is built using React, Next.js, and Tailwind CSS.",
+        technologies: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel", "GitHub Pages"],
+        image: "/NodeJS.jpg?height=200&width=350",
+        github: "https://github.com/Bhavin-Pathak/Portfolio.Bhavin.git",
+    },
 
 ];
 
@@ -69,6 +93,20 @@ export const education = [
         institution: "Jaipur National University",
         description:
             "Currently pursuing advanced studies in software development, system design, and modern programming technologies.",
+    },
+    {
+        period: "June 2017 - April 2020",
+        title: "Bachelor of Computer Applications (BCA)",
+        institution: "MLSU University, Udaipur",
+        description:
+            "Studied computer science fundamentals, programming, database management, and web development.",
+    },
+    {
+        period: "June 2017 - April 2020",
+        title: "Bachelor of Computer Applications (BCA)",
+        institution: "MLSU University, Udaipur",
+        description:
+            "Studied computer science fundamentals, programming, database management, and web development.",
     },
     {
         period: "June 2017 - April 2020",

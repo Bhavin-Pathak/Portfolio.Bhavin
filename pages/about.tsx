@@ -3,10 +3,13 @@ import { skills } from "@/lib/constants";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gray-100 dark:bg-gray-900/50">
+    <section
+      id="about"
+      className="h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900/50"
+    >
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Who I Am & What I Do</h2>
+        <div className="max-w-3xl mx-auto text-center mb-10">
+          <h2 className="text-4xl font-bold mb-4">Who I Am & What I Do</h2>
           <p className="text-gray-600 dark:text-gray-300">
             From Passion to Profession – My Developer Journey.
           </p>
@@ -20,11 +23,7 @@ const About = () => {
             <p className="text-gray-600 dark:text-gray-300 mb-6">
               I am Bhavin Pathak, a <b>Full-Stack Software Developer</b> with a
               passion for learning new technologies and building innovative
-              digital solutions. My goal is to combine design, performance, and
-              functionality to create seamless user experiences. Currently, I
-              specialize in frontend development with React and Flutter, while
-              also having strong experience in Node.js, Native iOS development,
-              and databases.
+              digital solutions.
             </p>
             <p>
               I enjoy solving complex problems, optimizing performance, and

@@ -12,7 +12,7 @@ const Home = () => {
       const timeout = setTimeout(() => {
         setText((prev) => prev + fullName[index]);
         setIndex((prev) => prev + 1);
-      }, 150); // Adjust speed of typing here
+      }, 200); // Adjust speed of typing here
 
       return () => clearTimeout(timeout);
     }
@@ -32,7 +32,7 @@ const Home = () => {
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               Hey there I'm{" "}
-              <span className="bg-gradient-to-r from-purple-600 to-orange-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent">
                 {text}
                 <motion.span
                   animate={{ opacity: [0, 1, 0] }}

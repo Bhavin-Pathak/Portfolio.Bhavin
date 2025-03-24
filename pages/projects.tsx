@@ -6,16 +6,19 @@ import { projects } from "@/lib/constants";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20">
+    <section
+      id="projects"
+      className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900/50 py-20"
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">My recent work</h2>
+          <h2 className="text-4xl font-bold mb-4">My Recent Work</h2>
           <p className="text-gray-600 dark:text-gray-300">
             Projects that define my journey as a developer.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -24,7 +27,7 @@ const Projects = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="overflow-hidden h-full bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
+              <Card className="overflow-hidden bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow">
                 <div className="relative">
                   <img
                     src={project.image || "/placeholder.svg"}
